@@ -1,0 +1,166 @@
+/* Reset & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url(./pictures/evangeline-shaw-nwLTVwb7DbU-unsplash.jpg) no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 60px;
+}
+
+/* Container styling */
+.container {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 500px;
+}
+
+/* Heading */
+.container h1 {
+  font-size: 26px;
+  color: #2d3748;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+form input,
+form select {
+  padding: 10px 12px;
+  font-size: 16px;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+}
+
+form input:focus,
+form select:focus {
+  border-color: #3182ce;
+  outline: none;
+}
+
+form button {
+  padding: 10px;
+  background-color: #3182ce;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #2b6cb0;
+}
+
+/* Guest List */
+#guest-list {
+  list-style: none;
+}
+
+#guest-list li {
+  background-color: #f7fafc;
+  padding: 12px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  transition: background-color 0.3s;
+}
+
+#guest-list li.not-coming {
+  opacity: 0.6;
+  background-color: #fef2f2;
+}
+
+/* Name and time */
+.name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.time {
+  font-size: 12px;
+  color: #718096;
+}
+
+/* Buttons container */
+.buttons {
+  margin-top: 6px;
+  display: flex;
+  gap: 10px;
+}
+
+/* Individual buttons */
+#guest-list button {
+  background-color: transparent;
+  border: none;
+  color: #3182ce;
+  cursor: pointer;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+#guest-list button:hover {
+  color: #2c5282;
+}
+
+/* RSVP button styles */
+.rsvp {
+  color: #38a169;
+}
+
+.rsvp.not-attending {
+  color: #e53e3e;
+}
+
+/* Category Tags */
+.tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: white;
+  margin-left: 5px;
+  text-transform: capitalize;
+}
+
+.tag-friend {
+  background-color: #48bb78;
+}
+
+.tag-family {
+  background-color: #ed8936;
+}
+
+.tag-colleague {
+  background-color: #4299e1;
+}
+
+.tag-default {
+  background-color: #718096;
+}
