@@ -1,4 +1,4 @@
-# Code-challenge-week-two
+# Code-challenge-week-twog
 # Event Guest List Manager
 
 This is a simple and interactive web app built using **HTML**, **CSS**, and **JavaScript** that allows users to manage guests for an event in real-time without refreshing the browser.
